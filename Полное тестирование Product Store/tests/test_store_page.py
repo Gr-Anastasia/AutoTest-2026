@@ -5,7 +5,7 @@ from pages.product_page import CartProduct
 from pages.homepage import HomePage
 
 
-@allure.title("Переход на страницу карточки товара из главного меню")
+@allure.title("Переход на страницу карточки товара Sony xperia z5 из главного меню")
 def test_store(driver):
     store_page = HomePage(driver)
     with allure.step("Открываем страницу каталога"):
@@ -17,7 +17,7 @@ def test_store(driver):
     expect(driver).to_have_url("https://www.demoblaze.com/prod.html?idp_=6")
 
 # Не знала какой сделать отрицательный тест, поэтому придумала тот, где после нажатия на кнопку осуществляется переход в корзину
-@allure.title("Переход на страницу корзины из карточки товара")
+@allure.title("Переход на страницу корзины из карточки товара Sony xperia z5")
 def test_product_page(driver):
     product_page = CartProduct(driver)
     with allure.step("Открываем страницу продукта Sony xperia z5"):

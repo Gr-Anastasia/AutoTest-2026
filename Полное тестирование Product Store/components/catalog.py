@@ -8,6 +8,5 @@ class Catalog:
     def wrapper(self):
         return self.driver.locator('//div[@class = "col-lg-9"]')
 
-
     def get_product_by_title(self, title):
         return Product(self.driver, title)
